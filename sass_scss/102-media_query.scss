@@ -1,0 +1,26 @@
+/* Declare h1 and media query */
+$large-font: 20px;
+$regular-font: 18px;
+$small-font: 16px;
+$xs-font: 14px;
+$mediaMaxWidth-regular: 960px;
+$mediaMaxWidth-small: 640px;
+$mediaMaxWidth-xs: 320px;
+
+/*$sizes: 14px, 16px, 18px;
+$widths: 320px, 640px, 960px;
+*/
+h1 {
+  font-size: $large-font;
+  @media screen and (max-width: #{$mediaMaxWidth-regular}) {
+    & { font-size: $regular-font; }
+  }
+  @media screen and (max-width: #{$mediaMaxWidth-small}) {
+    & { font-size: $small-font; }
+  }
+  @media screen and (max-width: #{$mediaMaxWidth-xs}) {
+    & { font-size: $xs-font;
+        &.small { color: #1D1D1D; }
+    }
+  }
+}

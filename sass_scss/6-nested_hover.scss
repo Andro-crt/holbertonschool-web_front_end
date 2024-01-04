@@ -1,0 +1,7 @@
+/* Assign color to body and .red, use nested :hover declarations */
+$red: #FF0000;
+$button-color-hover: #00FF00;
+button {
+  color: $red;
+  &:hover { color: $button-color-hover; }
+}

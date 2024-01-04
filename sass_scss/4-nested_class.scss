@@ -1,0 +1,7 @@
+/* Assign color to body and .red, use nested declarations */
+$gray: #3D3D3D;
+$red: #FF0000;
+body {
+  color: $gray;
+  .red { color: $red; }
+}

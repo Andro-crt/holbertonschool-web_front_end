@@ -1,0 +1,11 @@
+/* Assign font-size, multiple levels of nesting  */
+$font-size-body: 14px;
+$font-size-h1: 16px;
+$font-size-small: 12px;
+body {
+  font-size: $font-size-body;
+  h1 { 
+        font-size: $font-size-h1;
+        &.smaller { font-size: $font-size-small; }
+  }
+}

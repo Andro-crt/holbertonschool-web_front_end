@@ -1,0 +1,11 @@
+/* Declare h1 and media query */
+$h1-font-size: 20px;
+$h1-font-size-mobile: 14px;
+$mediaMaxWidth: 320px;
+
+h1 {
+  font-size: $h1-font-size;
+  @media screen and (max-width: #{$mediaMaxWidth}) {
+    & { font-size: $h1-font-size-mobile; }
+  }
+}

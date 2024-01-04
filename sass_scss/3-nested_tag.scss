@@ -1,0 +1,9 @@
+/* Use nested SCSS declaration */
+$no-margin: 0px;
+$no-padding: 0px;
+$p-margin: 10px;
+body {
+  margin: $no-margin;
+  padding: $no-padding; 
+  p { margin: $p-margin; }
+}
